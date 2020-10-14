@@ -8,7 +8,7 @@ MOCKGEN := $(BIN_DIR)/mockgen
 # Build all files.
 build: $(MOCKGEN)
 	@echo "==> Building"
-	@$(GO) generate ./...
+	@$(GO) build ./cmd/apex/
 .PHONY: build
 
 # Test all packages.
